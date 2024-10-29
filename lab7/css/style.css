@@ -1,26 +1,35 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f2; /* Light pink */
     margin: 0;
     padding: 20px;
 }
 
 h1 {
-    color: #336699;
+    color: #9933cc; /* Purple */
 }
 
 div {
-    background-color: white;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,.2); /* Subtle shadow */
+    background-color: #fff5e6; /* Light peach */
     
+border-radius:
+    
+8px;
+
+box-shadow:
+    
+0
+
+4px 8px rgba(255,192,203,.2);
+
 padding:
     
-10px; /* Padding inside the box */
+10px;
 
 margin-bottom:
     
-20px; /* Space between divs */
+20px;
+
 }
 
 p { line-height:
