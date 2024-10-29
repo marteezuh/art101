@@ -8,7 +8,7 @@
 
 function sortUserName() {
     // Prompt the user for their name
-    var userName = window.prompt("Maritza Ortega");
+    var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
 
     // Convert the string to an array, sort it, and convert it back to a string
     var sortedName = userName.split('').sort().join('');
