@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #336699;
+}
+
+div {
+    background-color: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,.2); /* Subtle shadow */
+    
+padding:
+    
+10px; /* Padding inside the box */
+
+margin-bottom:
+    
+20px; /* Space between divs */
+}
+
+p { line-height:
+
+1.5em;
+
+}
