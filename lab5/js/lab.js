@@ -18,4 +18,3 @@
   document.writeln("Year: " + year + "<br>");
   document.writeln("Age: " + age + " years<br>");
 
-/
