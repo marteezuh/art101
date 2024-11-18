@@ -22,20 +22,19 @@ function sortingHat(str) {
 }
 
 // Click listener for the submit button
-$("#button").click(function() {
-    // Get the value from the input field
-    const name = $("#input").val();
+$(document).ready(function() {
+    $("#button").click(function() {
+        // Get the value from the input field
+        const name = $("#input").val().trim();
 
-    
-    if (name.trim() !== "") {
-        
-        const house = sortingHat(name);
+        // Ensure that the name is not empty
+        if (name !== "") {
+            // Run sortingHat function and store the result in 'house'
+            const house = sortingHat(name);
 
-        
-        $("#output").html('<p style="font-size: 1.5em; color: #4CAF50; font-weight: bold;">The Sorting Hat has sorted you into ' + house + '!</p>');
-    } else {
-   
-        $("#output").html('<p style="font-size: 1.5em; color: red;">Please enter a name for sorting.</p>');
-    }
-});
+            // Append a styled paragraph to the output div with the sorting result
+            $("#output").html('<p style="font-size: 1.5em; color: #4CAF50; font-weight: bold;">The Sorting Hat has sorted you into ' + house + '!</p>');
+        } else {
+            // If the input is empty, prompt the user to enter a name
+            $("#output").html('<p style="font-size: 1.5em; color: red;">Please enter a name for sorting
 
