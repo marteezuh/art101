@@ -1,39 +1,35 @@
+ 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffe6f2; /* Light pink */
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #FF6F00;  
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    font-family: 'Press Start 2P', cursive; 
 }
 
 h1 {
-    color: #9933cc; /* Purple */
+    font-size: 4em;
+    margin-top: 20px;
 }
 
-div {
-    background-color: #fff5e6; /* Light peach */
-    
-border-radius:
-    
-8px;
-
-box-shadow:
-    
-0
-
-4px 8px rgba(255,192,203,.2);
-
-padding:
-    
-10px;
-
-margin-bottom:
-    
-20px;
-
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-p { line-height:
 
-1.5em;
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #FF6F00;
+    color: white;
+    border: 2px solid #FFF;
+    padding: 10px 20px;
+    font-size: 1.5em;
 
-}
