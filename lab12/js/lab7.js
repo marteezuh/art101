@@ -3,13 +3,10 @@
 // Date:14 November 2024
 
 function sortingHat(str) {
-    // Calculate the length of the input string
-    const length = str.length;
+    const length = str.length;  // Get the length of the string
+    const mod = length % 4;     // Use modulus operator to get a value between 0 and 3
 
-    // Use the modulus operator to determine which House the user belongs to
-    const mod = length % 4;
-
-    // Return the House based on the value of mod (0-3)
+    // Return the corresponding house based on the modulus value
     switch(mod) {
         case 0:
             return "House Atreides";
@@ -29,15 +26,16 @@ $("#button").click(function() {
     // Get the value from the input field
     const name = $("#input").val();
 
-    // Check if the name is not empty
+    
     if (name.trim() !== "") {
-        // Run sortingHat function and store the result in house
+        
         const house = sortingHat(name);
 
-        // Append the result to the output div
-        $("#output").html("<p>The Sorting Hat has sorted you into " + house + "!</p>");
+        
+        $("#output").html('<p style="font-size: 1.5em; color: #4CAF50; font-weight: bold;">The Sorting Hat has sorted you into ' + house + '!</p>');
     } else {
-        // If the name is empty, prompt the user to enter a name
-        $("#output").html("<p>Please enter a name for sorting.</p>");
+   
+        $("#output").html('<p style="font-size: 1.5em; color: red;">Please enter a name for sorting.</p>');
     }
 });
+
