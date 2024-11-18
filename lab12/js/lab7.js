@@ -1,21 +1,43 @@
-// index.js - Lab 7: Functions
+// index.js - Lab 12: Conditionals
 // Author: Maritza Ortega
-// Date:28 October 2024
+// Date:14 November 2024
 
-// Constants
+function sortingHat(str) {
+    // Calculate the length of the input string
+    const length = str.length;
 
-// Functions
+    // Use the modulus operator to determine which House the user belongs to
+    const mod = length % 4;
 
-function sortUserName() {
-    // Prompt the user for their name
-    var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
-
-    // Convert the string to an array, sort it, and convert it back to a string
-    var sortedName = userName.split('').sort().join('');
-
-    return sortedName;
+    // Return the House based on the value of mod (0-3)
+    switch(mod) {
+        case 0:
+            return "House Atreides";
+        case 1:
+            return "House Harkonnen";
+        case 2:
+            return "House Corrino";
+        case 3:
+            return "Fremen";
+        default:
+            return "Unknown";
+    }
 }
 
-// Call the function and output the result
-document.writeln("Sorted letters of your name: " + sortUserName());
+// Click listener for the submit button
+$("#button").click(function() {
+    // Get the value from the input field
+    const name = $("#input").val();
 
+    // Check if the name is not empty
+    if (name.trim() !== "") {
+        // Run sortingHat function and store the result in house
+        const house = sortingHat(name);
+
+        // Append the result to the output div
+        $("#output").html("<p>The Sorting Hat has sorted you into " + house + "!</p>");
+    } else {
+        // If the name is empty, prompt the user to enter a name
+        $("#output").html("<p>Please enter a name for sorting.</p>");
+    }
+});
