@@ -30,6 +30,13 @@ margin-bottom:
     
 20px;
 
+.special {
+    background-color: rgb(61, 203, 224);
+    border: dotted 50px rgb(13, 0, 128);
+    color: rgb(19, 232, 48);
+    font-weight: bold;
+}
+
 }
 
 p { line-height:
