@@ -18,3 +18,22 @@ function main() {
 
 // let's get this party started
 main();
+
+
+// set up a blank page
+
+// something to type in the color name
+  //maybe a window prompt
+
+// change the page color according to the user input
+
+  // maybe random color
+
+  function chooseColor () {
+    let askColor = window.prompt("What color?");
+    console.log (askColor)
+    return askColor;
+  }
+
+  chooseColor();
+  
