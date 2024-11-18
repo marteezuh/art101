@@ -1,35 +1,67 @@
- 
+/* Global Styles */
 body {
-    background-color: #000;
-    color: #FFF;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: #000; /* Black background for a retro vibe */
+    color: #FFF; /* White text for contrast */
+    font-family: 'Poppins', sans-serif; /* More playful font */
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: center; /* Center text */
 }
 
+/* Heading Styles */
 h1, h2 {
-    color: #ba95f1;  
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
-    font-family: 'Press Start 2P', cursive; 
+    color: #ba95f1; /* Purple color for the headings */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); /* Add a shadow to give depth */
+    font-family: 'Press Start 2P', cursive; /* Retro-style font */
 }
 
+/* Specific Styles for h1 */
 h1 {
-    font-size: 4em;
+    font-size: 4em; /* Large size for the main title */
     margin-top: 20px;
 }
 
+/* Specific Styles for h2 */
 h2 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Slightly smaller than h1 */
     margin-bottom: 20px;
 }
 
-
+/* Button Styles */
 button {
-    font-family: 'Press Start 2P', cursive;
-    background-color: #ff00bf;
-    color: white;
-    border: 2px solid #FFF;
-    padding: 10px 20px;
-    font-size: 1.5em;
+    font-family: 'Press Start 2P', cursive; /* Retro font for the buttons */
+    background-color: #ff00bf; /* Bright pink background */
+    color: white; /* White text */
+    border: 2px solid #FFF; /* White border for contrast */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1.5em; /* Larger font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-transform: uppercase; /* Uppercase text for extra retro flair */
+}
 
+/* Button Hover Effects */
+button:hover {
+    background-color: #ff55e1; /* Lighter pink on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Output Text Styles */
+#output {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #222; /* Dark background for the output */
+    border: 2px solid #fff; /* White border to stand out */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Soft white glow */
+}
+
+/* Text Inside Output Div */
+.text {
+    background-color: #333; /* Darker background for each text block */
+    color: #fff; /* White text */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px; /* Rounded corners for each text block */
+    font-size: 1.2em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Subtle shadow for the text blocks */
+}
