@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2 {
-    color: #FF6F00;  
+    color: #ba95f1;  
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
     font-family: 'Press Start 2P', cursive; 
 }
@@ -27,7 +27,7 @@ h2 {
 
 button {
     font-family: 'Press Start 2P', cursive;
-    background-color: #FF6F00;
+    background-color: #ff00bf;
     color: white;
     border: 2px solid #FFF;
     padding: 10px 20px;
