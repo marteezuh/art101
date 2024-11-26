@@ -2,28 +2,31 @@
 // Author: Maritza Ortega
 // Date:31 October 2024
 
-
 var array = [1, 2, 3, 4, 5];
 
-function squareNumber(x) {
+
+function square(x) {
     var results = x * x;
     return results;
 }
 
-console.log(squareNumber(2)); // Output: 4
-console.log(squareNumber(3)); // Output: 9
 
-var squaredResults = array.map(squareNumber);
-console.log("Results of squaring: ", squaredResults); // Output: [1, 4, 9, 16, 25]
+console.log(square(2)); // 4
+console.log(square(3)); // 9
+console.log(square(4)); // 16
 
 
-var addedResults = array.map(function(x) {
-    var results = x + 10;
+var squaredArray = array.map(square);
+console.log("Squared Array: ", squaredArray); // [1, 4, 9, 16, 25]
+
+
+var doubledArray = array.map(function(x) {
+    var results = x * 2;
     return results;
 });
+console.log("Doubled Array: ", doubledArray); // [2, 4, 6, 8, 10]
 
-console.log("Results of adding 10: ", addedResults); // Output: [11, 12, 13, 14, 15]
 
+var mapResults = array.map(square);
+console.log("Results: ", mapResults); // [1, 4, 9, 16, 25]
 
-var mapResults = array.map(squareNumber);
-console.log("Map results (squared): ", mapResults); // Output: [1, 4, 9, 16, 25]
