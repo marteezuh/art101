@@ -3,29 +3,33 @@
 // Date:31 October 2024
 
 
-var array = [1, 2, 3, 4, 5]; // Original array of numbers
+
+var array = [1, 12, 24, 48, 25];
 
 
-function square(x) {
-    return x * x;
+function squareRoot(x) {
+    var results = Math.sqrt(x);
+    return results;
 }
 
 
-console.log("Testing square function:");
-console.log(square(2)); // 4
-console.log(square(3)); // 9
-console.log(square(4)); // 16
+console.log("Test squareRoot function:");
+console.log(squareRoot(4));  // Output: 2
+console.log(squareRoot(16)); // Output: 4
+console.log(squareRoot(25)); // Output: 5
 
 
-var squaredArray = array.map(square);
-console.log("Squared Array:", squaredArray); // [1, 4, 9, 16, 25]
+var sqrtResults = array.map(squareRoot);
+console.log("Square Root Results:", sqrtResults); 
 
 
-var doubledArray = array.map(function (x) {
-    return x * 2;
+var squaredResults = array.map(function(x) {
+    var results = x * x;
+    return results;
 });
-console.log("Doubled Array:", doubledArray); // [2, 4, 6, 8, 10]
+
+console.log("Squared Results:", squaredResults); 
 
 
-var mapResults = array.map(square);
-console.log("Map Results (Squares):", mapResults); // [1, 4, 9, 16, 25]
+var mapResults = array.map(squareRoot);
+console.log("Results from squareRoot function with map():", mapResults); 
